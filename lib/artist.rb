@@ -39,14 +39,10 @@ class Artist
     artist
   end
 
-
-
   def save
     @@all << self
   end
 
-  #this method prints out an array of song names
-  #by accessing the name attribute of each song
   def print_songs()
     puts @songs.collect {|x| x.name}
   end
